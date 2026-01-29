@@ -1,23 +1,71 @@
-# Root
-.env
-.DS_Store
+# # Root
+# .env
+# .DS_Store
 
-# Frontend
+# # Frontend
+# frontend/node_modules/
+# frontend/.env
+# frontend/build/
+
+# # Backend
+# backend/node_modules/
+# backend/.env
+
+# # Sniffer (Python)
+# sniffer/venv/
+# sniffer/__pycache__/
+# sniffer/*.pyc
+# sniffer/tempCodeRunnerFile.py
+# sniffer/packet_logs.json
+# sniffer/.env
+
+# # VS Code
+# .vscode/
+
+
+
+# ---------------------------------
+# GLOBAL / SYSTEM FILES
+# ---------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# ---------------------------------
+# ROOT LEVEL
+# ---------------------------------
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---------------------------------
+# BACKEND (Node.js/Express)
+# ---------------------------------
+backend/node_modules/
+backend/.env
+backend/coverage/
+
+# ---------------------------------
+# FRONTEND (React)
+# ---------------------------------
 frontend/node_modules/
 frontend/.env
 frontend/build/
+frontend/dist/
+frontend/.eslintcache
 
-# Backend
-backend/node_modules/
-backend/.env
-
-# Sniffer (Python)
+# ---------------------------------
+# SNIFFER (Python)
+# ---------------------------------
 sniffer/venv/
+sniffer/env/
 sniffer/__pycache__/
 sniffer/*.pyc
-sniffer/tempCodeRunnerFile.py
-sniffer/packet_logs.json
 sniffer/.env
 
-# VS Code
-.vscode/
+# Ignore specific log files or data outputs
+sniffer/packet_logs.json
+sniffer/tempCodeRunnerFile.py

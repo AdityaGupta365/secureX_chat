@@ -26,7 +26,7 @@ export default class messageController{
                 chat:chatId
             });
             const savedMessage= await message.save();
-            const populatedMessage=await Message.findById(savecMessage._id).populate('sender','username');
+            const populatedMessage=await Message.findById(savedMessage._id).populate('sender','username');
             res.json(populatedMessage);
         }
         catch(error){
